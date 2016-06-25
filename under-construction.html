@@ -7,19 +7,23 @@
 		<title>Page not found!</title>
 		
 		<style type="text/css">
-			div {
+			#text-container {
 				height:800px; 
 				width:1349px; 
 				background-image: url("img/img003.jpg");
 				background-size: cover;
 				margin: auto;
-				padding-top: 21%;
+				overflow: hidden;
 			}
 
-			h1 {
+			#text {
+				margin-top: 22%;
+				margin-right: 32%; 
+				position: relative;
 				text-align: center;
 				font-family: cursive;
-				/*border: 4px solid white;*/
+				font-weight: bold;
+				font-size: 36px;
 				text-decoration: underline;
 			}
 
@@ -27,8 +31,8 @@
 		</style>
 	</head>
 	<body>
-		<div>
-			<h1> Page under construction!</h1>
+		<div id="text-container">
+			<div id="text"> Page under construction!</div>
 		</div>
 	</body>
 </html>
