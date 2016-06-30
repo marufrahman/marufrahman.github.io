@@ -121,13 +121,13 @@ var main = function() {
 	setInterval(slideshow, 7000);
 
 	// code tab dropdown menu
-	$('.code-tab').mouseenter(function() {
+	$('.code-tab').hover(function() {
 		$('.code-dropdown-menu').slideDown(300);
 	});
 
-	$('.code-tab').mouseleave(function() {
-		$('.code-dropdown-menu').slideUp(300);
-	});
+	// $('.code-tab').mouseleave(function() {
+	// 	$('.code-dropdown-menu').slideUp(300);
+	// });
 
 };
 
