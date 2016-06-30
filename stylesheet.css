@@ -1,17 +1,22 @@
+body > div {
+	width: 1349px;
+	margin: auto;
+	position: relative;
+	/*border: 5px solid red;*/
+	overflow: hidden;
+}
+
 #home-page-image {
 	background-image: url('img/img001.jpg');
 	background-position: center top;
-	background-size: 100% 800px;
-	margin-top: -150px;
-	margin-left: auto;
-	margin-right: auto;
+	background-size: 100% 650px;
 	width: 1349px;
-	height: 800px;
+	height: 650px;
 }
 
 .rectangle {
 	display: inline-block;
-	margin-top: 175px;
+	margin-top: 25px;
 	height: 60px;
 	color: white;
 	font-size: 40px;
@@ -34,7 +39,7 @@
 .navbar {
 	float: right;
 	display: inline-block;
-	margin-top: 185px;
+	margin-top: 35px;
 	margin-right: 40px;
 }
 
@@ -46,7 +51,6 @@
 	color: white;
 	margin-right: 25px;
 	font-size: 16px;
-	/*font-weight: bold;*/
 	text-align: center;
 	padding: 9px;
 	font-family: Century Gothic, serif;
@@ -58,10 +62,14 @@
 	font-weight: bold;
 }
 
+.navbar.not-home li {
+	border: 3px solid black;
+	color: black;
+}
+
 .circle {
 	position: relative;
 	display: inline-block;
-	/*margin-top: 75px;*/
 	margin-left: 121px;
 	margin-bottom: 45px;
 	height: 170px;
@@ -192,4 +200,122 @@
 	font-size: 16px;
 	color: white;
 	height: 20px;
+}
+
+/* Travel */
+
+.space-50px {
+	height: 50px;
+}
+
+.page-top-image {
+	display: none;
+	position: absolute;
+	height: 400px;
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	box-shadow: 5px 5px 5px rgb(190, 190, 190);
+}
+
+.active-slide {
+	display: block;
+	position: relative;
+}
+
+#slide-control {
+	font-size: 24px;
+	color: black;
+	width: 10%;
+	height: 100px;
+	margin: auto;
+	padding-top: 25px;
+	overflow: hidden;
+	/*border: 1px solid red;*/
+}
+
+#left-arrow {
+	float: left;
+	cursor: pointer;
+}
+
+#right-arrow {
+	float: right;
+	cursor: pointer;
+}
+
+.diams-list {
+	display: inline-block;
+	padding-left: 0;
+	position: relative;
+	left: 16px;
+	cursor: default;
+}
+
+.diams {
+	color: gray;
+	font-size: 18px;
+	display: inline;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.active-diam {
+	color: black;
+	pointer-events: none;
+}
+
+.albums {
+	margin-top: 40px;
+	margin-bottom: 75px;
+}
+
+.album-box {
+	display: inline-block;
+	width: 300px;
+	height: 250px;
+	border: 2px solid rgba(192, 192, 192, 0.8);
+	box-shadow: 10px 10px 10px rgba(150, 150, 150, 0.8);
+	margin-bottom: 15px;
+}
+
+.album-box:hover {
+	border: 2px solid rgba(120, 120, 120, 0.8);
+	text-decoration: underline;
+}
+
+.album-box-left {
+	margin-left: 130px;
+	float: left;
+}
+
+.album-box-middle {
+	margin-left: 97px;
+	float: left;
+}
+
+.album-box-right {
+	margin-right: 130px;
+	float: right;
+}
+
+.album-cover {
+	width: 92%;
+	height: 160px;
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 12px;
+	margin-bottom: 8px;
+	box-shadow: 6px 6px 6px rgba(135, 135, 135, 0.8);
+}
+
+.album-title {
+	text-align: center;
+	vertical-align: center;
+	font-family: Monotype Corsiva, Cursive;
+	font-size: 24px;
+	margin-top: 13px;
+	color: rgb(100, 100, 100);
+	text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.8);
 }
