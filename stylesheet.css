@@ -44,15 +44,17 @@ body > div {
 }
 
 .navbar li {
+	list-style: none;
 	display: inline-block;
-	height: 45px;
+	line-height: 45px;
 	width: 150px;
 	border: 3px solid white;
 	color: white;
 	margin-right: 25px;
 	font-size: 16px;
 	text-align: center;
-	padding: 9px;
+	vertical-align: middle;
+	/*padding: 9px;*/
 	font-family: Century Gothic, serif;
 }
 
@@ -65,6 +67,31 @@ body > div {
 .navbar.not-home li {
 	border: 3px solid black;
 	color: black;
+}
+
+.code-dropdown-menu {
+	position: absolute;
+	display: none;
+	top: 45px;
+	left: 179px;
+	z-index: 100;
+}
+
+.code-dropdown-menu li {
+	list-style: none;
+	width: 150px;
+	line-height: 40px;
+	font-family: Century Gothic, serif;
+	font-size: 15px;
+	text-align: center;
+	background-color: white;
+	border: 3px solid black;
+	border-top: none;
+	border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.code-dropdown-menu li:last-child {
+	border-bottom: 3px solid black;
 }
 
 .circle {

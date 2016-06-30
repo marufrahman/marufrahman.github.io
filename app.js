@@ -19,6 +19,7 @@ var slideshow = function() {
 
 
 var main = function() {
+	// home page pic info
 	$('#pic1').hover(function() {
 		$('#pic1-detail').show();
 	});
@@ -45,7 +46,7 @@ var main = function() {
 	});
 
 
-	// travel
+	// travel slide
 	$('#right-arrow').click(function() {
 		var currentSlide = $('.active-slide');
 		var nextSlide = currentSlide.next();
@@ -116,7 +117,18 @@ var main = function() {
 		$(this).addClass('active-diam');
 	});
 
+	// slideshow in travel page
 	setInterval(slideshow, 7000);
+
+	// code tab dropdown menu
+	$('.code-tab').mouseenter(function() {
+		$('.code-dropdown-menu').slideDown(300);
+	});
+
+	$('.code-tab').mouseleave(function() {
+		$('.code-dropdown-menu').slideUp(300);
+	});
+
 };
 
 $(document).ready(main);
