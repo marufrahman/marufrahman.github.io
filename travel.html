@@ -9,7 +9,7 @@
 	</head>
 
 	<body>
-		<div style="border-bottom: 1px solid gray">
+		<div class="top-div">
 			<a href="index.html">
 				<div class="rectangle" id="first-name">
 					Maruf
@@ -22,20 +22,23 @@
 
 			<div class="navbar not-home">
 				<ul>
-					<a href="index.html"><li>Home</li></a>
-					<li class="code-tab">Coding</li>
-					<a href="travel.html"><li>Travel</li></a>
-					<a href="under-construction.html"><li>Resume</li></a>
-				<ul>
+					<li class="navbar-tabs"><a href="index.html">Home</a></li>
+					<li class="navbar-tabs code-tab">
+						<a href="under-construction.html" class="code-text">Coding</a>
+						<ul class="code-dropdown-menu">
+							<li>Java</li>
+							<li>Python</li>
+							<li>C</li>
+							<li>SQL</li>
+						</ul>
+					</li>
+					<li class="navbar-tabs"><a href="travel.html">Travel</a></li>
+					<li class="navbar-tabs"><a href="under-construction.html">Resume</a></li>
+				</ul>
 			</div>
 		</div>
 
-		<ul class="code-dropdown-menu">
-			<li>Java</li>
-			<li>Python</li>
-			<li>C</li>
-			<li>SQL</li>
-		</ul>
+		<div class="divider"></div>
 
 		<div class="slider">
 			<img class="page-top-image active-slide" id="slider-img-1" src="img/pic008.jpg" />

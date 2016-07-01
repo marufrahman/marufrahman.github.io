@@ -2,8 +2,21 @@ body > div {
 	width: 1349px;
 	margin: auto;
 	position: relative;
-	/*border: 5px solid red;*/
+	/*border: 2px solid red;*/
 	overflow: hidden;
+}
+
+.top-div {
+	margin-bottom: 35px; 
+	overflow:visible;
+	margin-top: 25px;
+	/*border: 2px solid blue;*/
+}
+
+.divider {
+	border-bottom: 1px solid gray;
+	margin-top: 20px;
+	margin-bottom: 40px; 
 }
 
 #home-page-image {
@@ -16,7 +29,6 @@ body > div {
 
 .rectangle {
 	display: inline-block;
-	margin-top: 25px;
 	height: 60px;
 	color: white;
 	font-size: 40px;
@@ -36,43 +48,56 @@ body > div {
 	background-color: rgba(0,0,0,0.8);
 }
 
+/*** Navigation Bar ***/
+
 .navbar {
 	float: right;
 	display: inline-block;
-	margin-top: 35px;
+	margin-top: 11px;
 	margin-right: 40px;
 }
 
-.navbar li {
+.navbar-tabs {
 	display: inline-block;
-	height: 45px;
+	line-height: 40px;
 	width: 150px;
-	border: 3px solid white;
-	color: white;
 	margin-right: 25px;
 	font-size: 16px;
 	text-align: center;
-	padding: 9px;
+	vertical-align: middle;
 	font-family: Century Gothic, serif;
 }
 
-.navbar li:hover {
+.navbar a, .navbar a:visited {
+	display: block;
+	width: 100%;
+	color: white;
+	border: 3px solid white;
+	text-decoration: none;
+}
+
+.navbar.not-home a, .navbar.not-home a:visited {
+	border: 3px solid black;
+	color: black;
+	text-decoration: none;
+}
+
+.navbar a:hover {
 	color: black;
 	background-color: white;
 	font-weight: bold;
+    text-decoration: none;
 }
 
-.navbar.not-home li {
-	border: 3px solid black;
-	color: black;
-}
+/* Dropdown Menu*/
 
 .code-dropdown-menu {
 	position: absolute;
 	display: none;
-	top: 80px;
-	left: 735px;
+	top: 45px;
+	left: 219px;
 	z-index: 100;
+	/*border: 2px solid blue;*/
 }
 
 .code-dropdown-menu li {
@@ -86,6 +111,7 @@ body > div {
 	border: 3px solid black;
 	border-top: none;
 	border-bottom: 1px solid rgb(150, 150, 150);
+	margin-left: -40px;
 }
 
 .code-dropdown-menu li:last-child {
@@ -239,8 +265,8 @@ body > div {
 	height: 400px;
 	width: 70%;
 	margin-left: 15%;
-	margin-top: 50px;
-	margin-bottom: 10px;
+	/*margin-top: 50px;*/
+	/*margin-bottom: 10px;*/
 	box-shadow: 5px 5px 5px rgb(190, 190, 190);
 }
 

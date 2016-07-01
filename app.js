@@ -123,11 +123,21 @@ var main = function() {
 	// code tab dropdown menu
 	$('.code-tab').hover(function() {
 		$('.code-dropdown-menu').slideDown(300);
+		$('.code-text').css("font-weight", "bold");
+		// home navbar tabs are different from the others
+		$('.home .code-text').css("background-color", "white");
+		$('.home .code-text').css("color", "black");
+		$('.home .code-text').css("border", "3px solid black");
 	});
 
-	// $('.code-tab').mouseleave(function() {
-	// 	$('.code-dropdown-menu').slideUp(300);
-	// });
+	$('.code-tab').mouseleave(function() {
+		$('.code-dropdown-menu').slideUp(300);
+		$('.code-text').css("font-weight", "normal");
+		
+		$('.home .code-text').css("background", "none");
+		$('.home .code-text').css("color", "white");
+		$('.home .code-text').css("border", "3px solid white");	
+	});
 
 };
 
