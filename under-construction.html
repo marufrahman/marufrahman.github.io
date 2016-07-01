@@ -8,22 +8,20 @@
 		
 		<style type="text/css">
 			#text-container {
-				height:800px; 
+				line-height:530px; 
 				width:1349px; 
-				background-image: url("img/img003.jpg");
-				background-size: cover;
+				background-color: rgb(240, 240, 240);
 				margin: auto;
 				overflow: hidden;
 			}
 
 			#text {
-				margin-top: 22%;
-				margin-right: 32%; 
 				position: relative;
 				text-align: center;
 				font-family: cursive;
 				font-weight: bold;
 				font-size: 36px;
+				vertical-align: middle;
 				text-decoration: underline;
 			}
 
@@ -31,8 +29,39 @@
 		</style>
 	</head>
 	<body>
+		<div class="top-div">
+			<a href="index.html">
+				<div class="rectangle" id="first-name">
+					Maruf
+				</div>
+
+				<div class="rectangle" id="last-name">
+					Rahman
+				</div>
+			</a>
+
+			<div class="navbar not-home">
+				<ul>
+					<li class="navbar-tabs"><a href="index.html">Home</a></li>
+					<li class="navbar-tabs code-tab">
+						<a href="under-construction.html" class="code-text">Coding</a>
+						<ul class="code-dropdown-menu">
+							<li><a href="#">Java</a></li>
+							<li><a href="#">Python</a></li>
+							<li><a href="#">C</a></li>
+							<li><a href="#">SQL</a></li>
+						</ul>
+					</li>
+					<li class="navbar-tabs"><a href="travel.html">Travel</a></li>
+					<li class="navbar-tabs"><a href="under-construction.html">Resume</a></li>
+				</ul>
+			</div>
+		</div>
 		<div id="text-container">
 			<div id="text"> Page under construction!</div>
 		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<script src="app.js"></script>
 	</body>
 </html>
