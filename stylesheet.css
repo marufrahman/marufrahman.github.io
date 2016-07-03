@@ -280,20 +280,26 @@ body > div {
 
 /*** Slide ***/
 
+.slider {
+	position: relative;
+	width: 70%;
+	height: 410px;
+	margin: auto;
+}
+
 .slider-image {
 	display: none;
 	position: absolute;
-	height: 400px;
-	width: 70%;
-	margin-left: 15%;
-	/*margin-top: 50px;*/
-	/*margin-bottom: 10px;*/
-	box-shadow: 5px 5px 5px rgb(190, 190, 190);
+	top: 0;
+	left: 0;
+	/* account for the shadow */
+	height: 98%;
+	width: 99.2%;
+	box-shadow: 5px 5px 5px rgb(160, 160, 160);
 }
 
 .active-slide {
 	display: block;
-	position: relative;
 }
 
 #slide-control {
@@ -507,7 +513,7 @@ body > div {
 	/*box-shadow: 3px 3px 3px rgb(150,150,150);*/
 }
 
-.resume-dwnld-btn a, .resume-dwnld-btn a:active, .resume-dwnld-btn a:visited  {
+.resume-dwnld-btn a, .resume-dwnld-btn a:active, .resume-dwnld-btn a:visited, .resume-dwnld-btn a:focus  {
 	color:white;
 	display: block;
 	width: 100%;
