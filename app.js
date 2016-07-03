@@ -6,7 +6,7 @@ var slideshow = function() {
 	var nextDiam = currentDiam.next();
 
 	if (nextSlide.length === 0) {
-		nextSlide = $('.page-top-image').first();
+		nextSlide = $('.slider-image').first();
 		nextDiam = $('.diams').first();
 	}
 
@@ -55,7 +55,7 @@ var main = function() {
 		var nextDiam = currentDiam.next();
 
 		if (nextSlide.length === 0) {
-			nextSlide = $('.page-top-image').first();
+			nextSlide = $('.slider-image').first();
 			nextDiam = $('.diams').first();
 		}
 
@@ -74,7 +74,7 @@ var main = function() {
 		var prevDiam = currentDiam.prev();
 
 		if (prevSlide.length === 0) {
-			prevSlide = $('.page-top-image').last();
+			prevSlide = $('.slider-image').last();
 			prevDiam = $('.diams').last();
 		}
 
