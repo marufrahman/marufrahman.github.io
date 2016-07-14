@@ -32,7 +32,7 @@ body > div {
 	height: 60px;
 	color: white;
 	font-size: 40px;
-	font-family: Century Gothic, Verdana, serif;
+	font-family: Century Gothic, Cambria, serif;
 	text-align: center;
 }
 
@@ -65,7 +65,7 @@ body > div {
 	font-size: 16px;
 	text-align: center;
 	vertical-align: middle;
-	font-family: Century Gothic, Verdana, serif;
+	font-family: Century Gothic, Cambria, serif;
 }
 
 .navbar .navbar-tabs>a, .navbar .navbar-tabs>a:visited {
@@ -104,7 +104,7 @@ body > div {
 	list-style: none;
 	width: 150px;
 	line-height: 40px;
-	font-family: Century Gothic, Verdana, serif;
+	font-family: Century Gothic, Cambria, serif;
 	font-size: 15px;
 	text-align: center;
 	background-color: white;
@@ -240,7 +240,7 @@ body > div {
 	padding: 20px;
 	background-color: rgba(0,0,0, 0.5);
 	color: white;
-	font-family: Century Gothic, Verdana, serif;	
+	font-family: Century Gothic, Cambria, serif;	
 }
 
 #about-me p {
@@ -476,12 +476,12 @@ body > div {
 }
 
 .album-box-heading2 {
-	font-family: Century Gothic, Verdana, serif;
+	font-family: Century Gothic, Cambria, serif;
 	text-decoration: underline;
 }
 
 .album-box-p1 {
-	font-family: Century Gothic, Verdana, serif;
+	font-family: Century Gothic, Cambria, serif;
 	font-size: 18px;
 	text-align: justify;
 }
@@ -524,7 +524,7 @@ body > div {
 /*** Resume ***/
 
 .resume {
-	font-family: Maiandra GD, Century Gothic, Verdana, Verdana, serif;
+	font-family: Maiandra GD, Century Gothic, Cambria, Cambria, serif;
 	font-size: 17px;
 	text-align: justify;
 }
@@ -595,8 +595,8 @@ body > div {
 	line-height: 50px;
 	background-color: rgb(81,93,255);
 	margin: auto;
-	font-family: Century Gothic, Verdana, serif;
-	font-size: 1.55rem;
+	font-family: Century Gothic, Cambria, serif;
+	font-size: 16px;
 	text-align: center;
 	vertical-align: middle;
 	border-radius: 5px;
@@ -644,5 +644,5 @@ body > div {
 	margin: auto;
 	text-align: justify;
 	font-size: 17px;
-	font-family: Century Gothic, Verdana, serif;
+	font-family: Century Gothic, Cambria, serif;
 }
