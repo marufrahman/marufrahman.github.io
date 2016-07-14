@@ -591,18 +591,16 @@ body > div {
 }
 
 .resume-dwnld-btn {
-	width: 13.5%;
-	/*line-height: 50px;*/
+	/*width: 13.5%;*/
+	display: inline-block;
 	background-color: rgb(81,93,255);
-	margin: auto;
+	margin-left: 43%;
 	font-family: Century Gothic, Cambria, serif;
 	font-size: 16px;
 	text-align: center;
-	vertical-align: middle;
 	border-radius: 5px;
 	overflow: hidden;
-	padding: 14px 0 14px 0;
-	/*box-shadow: 3px 3px 3px rgb(150,150,150);*/
+	padding: 14px 24px 14px 24px;
 }
 
 .resume-dwnld-btn a, .resume-dwnld-btn a:active, .resume-dwnld-btn a:visited, .resume-dwnld-btn a:focus  {
