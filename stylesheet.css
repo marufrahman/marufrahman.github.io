@@ -591,16 +591,15 @@ body > div {
 }
 
 .resume-dwnld-btn {
-	/*width: 13.5%;*/
-	display: inline-block;
+	width: 180px;
+	line-height: 50px;
 	background-color: rgb(81,93,255);
-	margin-left: 43%;
+	margin: auto;
 	font-family: Century Gothic, Cambria, serif;
 	font-size: 16px;
 	text-align: center;
+	vertical-align: middle;
 	border-radius: 5px;
-	overflow: hidden;
-	padding: 14px 24px 14px 24px;
 }
 
 .resume-dwnld-btn a, .resume-dwnld-btn a:active, .resume-dwnld-btn a:visited, .resume-dwnld-btn a:focus  {
