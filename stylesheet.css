@@ -310,7 +310,7 @@ body > div {
 	margin: auto;
 	/*padding-top: 25px;*/
 	overflow: hidden;
-	/*border: 1px solid red;*/
+	border: 1px solid red;
 }
 
 #left-arrow {
