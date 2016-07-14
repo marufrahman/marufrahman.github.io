@@ -305,7 +305,7 @@ body > div {
 #slide-control {
 	font-size: 24px;
 	color: black;
-	width: 140px;
+	width: 160px;
 	/*height: 100px;*/
 	margin: auto;
 	/*padding-top: 25px;*/
@@ -329,6 +329,7 @@ body > div {
 	display: inline;
 	vertical-align: top;
 	cursor: pointer;
+	margin-left: 5px;
 }
 
 .active-diam {
