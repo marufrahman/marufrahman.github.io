@@ -305,7 +305,7 @@ body > div {
 #slide-control {
 	font-size: 24px;
 	color: black;
-	width: 200px;
+	width: 140px;
 	/*height: 100px;*/
 	margin: auto;
 	/*padding-top: 25px;*/
@@ -325,7 +325,7 @@ body > div {
 
 .diams {
 	color: gray;
-	font-size: 18px;
+	font-size: 0.75em;
 	display: inline;
 	vertical-align: top;
 	cursor: pointer;
