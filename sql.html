@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <link rel="icon" href="img/icon_title002.png">
+		<title>SQL</title>
+	</head>
+
+	<body>
+		<div class="top-div">
+			<a href="index.html">
+				<div class="rectangle" id="first-name">
+					Maruf
+				</div>
+
+				<div class="rectangle" id="last-name">
+					Rahman
+				</div>
+			</a>
+
+			<div class="navbar not-home">
+				<ul>
+					<li class="navbar-tabs"><a href="index.html">Home</a></li>
+					<li class="navbar-tabs code-tab">
+						<a href="coding_projects.html" class="code-text">Coding</a>
+						<ul class="code-dropdown-menu">
+							<li><a href="java.html">Java</a></li>
+							<li><a href="python.html">Python</a></li>
+							<li><a href="under-construction.html">C</a></li>
+							<li><a href="sql.html">SQL</a></li>
+						</ul>
+					</li>
+					<li class="navbar-tabs"><a href="travel.html">Travel</a></li>
+					<li class="navbar-tabs"><a href="resume.html">Resume</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="divider"></div>
+		<div class="space-50px"></div>
+
+		<div>
+			<div class="project-container">
+				<div class="project-detail" style="float:right;width:85%">
+					<h1 style="background-color: rgb(255, 95, 95);">Scalable Data Analytics and Machine Learning</h1>
+					<div style="padding: 0 20px 0 20px;">
+						This project implements the K-means clustering algorithm in Spark and uses it to analyze political campaign data from the Federal Election Commission. It performs data analytics on about 432 MB of data that describes the finances of candidates running for election in 2016, and it details contributions from individual and organizations to campaigns disclosed to the FEC. <br>
+						<br>
+						The raw FEC data files are first loaded into Spark's Dataframes and SQL can be used to make various queries on the data. Finally, the implemented K-means Clustering algorithm is used categorize campaign contributions to the candidates by geographic location using clusters.
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="space-50px"></div>
+		<div class="space-50px"></div>
+
+		<div id="footer">
+			<p>&copy;Maruf Rahman 2016
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<script src="app.js"></script>
+	</body>
+</html>

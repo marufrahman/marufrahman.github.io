@@ -8,7 +8,7 @@ body > div {
 
 .top-div {
 	margin-bottom: 35px; 
-	overflow:visible;
+	overflow: visible;
 	margin-top: 25px;
 	/*border: 2px solid blue;*/
 }
@@ -305,10 +305,10 @@ body > div {
 #slide-control {
 	font-size: 24px;
 	color: black;
-	width: 10%;
-	height: 100px;
+	width: 140px;
+	/*height: 100px;*/
 	margin: auto;
-	padding-top: 25px;
+	/*padding-top: 25px;*/
 	overflow: hidden;
 	/*border: 1px solid red;*/
 }
@@ -321,14 +321,6 @@ body > div {
 #right-arrow {
 	float: right;
 	cursor: pointer;
-}
-
-.diams-list {
-	display: inline-block;
-	padding-left: 0;
-	position: relative;
-	left: 16px;
-	cursor: default;
 }
 
 .diams {
@@ -345,8 +337,8 @@ body > div {
 }
 
 .albums {
-	margin-top: 40px;
-	margin-bottom: 75px;
+	margin-top: 70px;
+	margin-bottom: 20px;
 }
 
 .album-box {
@@ -355,12 +347,13 @@ body > div {
 	height: 250px;
 	border: 2px solid rgba(192, 192, 192, 0.8);
 	box-shadow: 10px 10px 10px rgba(150, 150, 150, 0.8);
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 }
 
 .album-box:hover {
 	border: 2px solid rgba(120, 120, 120, 0.8);
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 .album-box-left {
@@ -398,7 +391,100 @@ body > div {
 	text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.8);
 }
 
+.album-window {
+	display: none;
+	height: 550px;
+	background-color: rgb(230,230,230);
+    box-shadow: inset 0px 0px 15px 10px rgba(100,100,100,0.9);
+}
+
+.album-window-box {
+	width:80%;
+	height:420px;
+	margin:auto;
+	/*border:2px solid blue;*/
+}
+
+.album-window-box-left {
+	float: left;
+	width: 55%;
+	height: 100%;
+	padding-right: 10px;
+	/*border: 2px solid yellow;*/
+}
+
+.album-window-box-detail {
+	display: inline-block;
+	float: right;
+	width: 40%;
+	height: 100%;
+	/*border: 2px solid purple;*/
+	color: black;
+}
+
+.album-window-control {
+	font-size: 24px;
+	color: black;
+	width: 81%;
+	/*height: 100%;*/
+	margin: auto;
+	overflow: hidden;
+	/*border: 2px solid red;*/
+}
+
+.album-window-close {
+	float: right;
+	font-size: 34px;
+	color: rgba(150, 150, 150, 0.5);
+	margin: 35px;
+	cursor: pointer;
+}
+
+.album-img {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	display: none;
+	border: 12px solid black;
+	box-shadow: 5px 5px 5px rgb(100, 100, 100);
+}
+
+.active-album-img {
+	display: block;
+}
+
+.album-thumbnail {
+	display: inline-block;
+	height: 45px;
+	width: 75px;
+	margin-left: 2px;
+	opacity: 0.5;
+}
+
+.active-album-thumbnail {
+	opacity: 1.0;
+	border: 3px solid black;
+}
+
+.album-box-heading1 {
+	font-family: Monotype Corsiva, Cursive;
+	font-size: 48px;
+	text-shadow: 5px 5px 4px rgb(120,120,120);
+}
+
+.album-box-heading2 {
+	font-family: Century Gothic, serif;
+	text-decoration: underline;
+}
+
+.album-box-p1 {
+	font-family: Century Gothic, serif;
+	font-size: 18px;
+	text-align: justify;
+}
+
 /* Coding */
+
 .page-top-image {
 	position: relative;
 	margin: auto;
@@ -435,7 +521,7 @@ body > div {
 /*** Resume ***/
 
 .resume {
-	font-family: Maiandra GD, serif;
+	font-family: Maiandra GD, Century Gothic, serif;
 	font-size: 17px;
 }
 
@@ -524,4 +610,35 @@ body > div {
 	color: white;
 	text-decoration: none;
 	font-weight: bold;
+}
+
+/* Projects */
+.project-container {
+	/*border: 1px solid red;*/
+	width: 85%;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 9px 9px 0;
+}
+
+.project-detail h1 {
+	margin-bottom: 30px;
+	/*font-weight: bold; */
+	font-size: 28px;
+	color: black;
+	border-radius: 7px;
+	padding: 12px 0px 12px 20px;
+	box-shadow: 5px 5px 5px rgb(170, 170, 170);
+}
+
+.project-img {
+	margin-top: 115px;
+}
+
+.project-detail {
+	display: inline-block;
+	margin: auto;
+	text-align: justify;
+	font-size: 17px;
+	font-family: Century Gothic, serif;
 }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <link rel="icon" href="img/icon_title002.png">
+		<title>C</title>
+	</head>
+
+	<body>
+		<div class="top-div">
+			<a href="index.html">
+				<div class="rectangle" id="first-name">
+					Maruf
+				</div>
+
+				<div class="rectangle" id="last-name">
+					Rahman
+				</div>
+			</a>
+
+			<div class="navbar not-home">
+				<ul>
+					<li class="navbar-tabs"><a href="index.html">Home</a></li>
+					<li class="navbar-tabs code-tab">
+						<a href="coding_projects.html" class="code-text">Coding</a>
+						<ul class="code-dropdown-menu">
+							<li><a href="java.html">Java</a></li>
+							<li><a href="python.html">Python</a></li>
+							<li><a href="c.html">C</a></li>
+							<li><a href="sql.html">SQL</a></li>
+						</ul>
+					</li>
+					<li class="navbar-tabs"><a href="travel.html">Travel</a></li>
+					<li class="navbar-tabs"><a href="resume.html">Resume</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="divider"></div>
+		<div class="space-50px"></div>
+
+		<div>
+			<div class="project-container">
+				<div class="project-detail" style="float:right;width:85%">
+					<h1 style="background-color: rgb(82, 196, 128);">Pintos OS</h1>
+					<div style="padding: 0 20px 0 20px;">
+						Pintos is computer software written in C, a simple instructional operating system framework for the 80x86 processor architecture. It was created at Stanford University by Ben Pfaff in 2004. It supports kernel threads, loading and running user programs, and a file system. As a class group project, we implemented and developed various fundamental aspects of an operating system that include the following among other things: 
+						<ul style="margin-top: 20px;">
+							<li>Threads</li>
+							<li>Memory Management</li> 
+							<li>Priority Scheduler</li>
+							<li>Multi-Level Feeback Queue Scheduler</li>
+							<li>Process Control Syscalls (e.g. exec, wait, etc.)</li>
+							<li>File Operation Syscalls (e.g. create, open, read, seek, etc.)</li>
+							<li>Concurrency Control (e.g. locks, semaphores, monitors)</li>
+							<li>Buffer Cache</li>
+							<li>Directory Support</li>
+						</ul>
+						<br>
+						In this project, we were graded on design document, code, testing, final report and code quality seperately.
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="space-50px"></div>
+		<div class="space-50px"></div>
+
+		<div>
+			<div class="project-container">
+				<div class="project-detail" style="float:left;width:85%">
+					<h1 style="background-color: rgb(255, 95, 95);">Depth Perception</h1>
+					<div style="padding: 0 20px 0 20px;">
+						Humans can tell how far away an object is by comparing the position of the object is in left eye's image with respect to right eye's image. If an object is really close, the left eye will see the object further to the right, whereas the right eye will see the object to the left. A similar effect will occur with cameras that are offset with respect to each other. 
+						<br>
+						<br>
+						We find the displacement map between the two pictures, left and right, using a simple block matching algorithm. Next, we use the displacement map to generate the depth of objects in the pictures.
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="space-50px"></div>
+		<div class="space-50px"></div>
+
+		<div>
+			<div class="project-container">
+				<div class="project-detail" style="float:right;width:85%">
+					<h1 style="background-color: rgb(0, 176, 240);">Basic grep</h1>
+					<div style="padding: 0 20px 0 20px;">
+						This is a very simple pattern matching algorithm written in C. It supports the following special characters:
+						<ul style="margin-top: 20px;list-style:none">
+							<li><strong>&nbsp;. :</strong>&nbsp; Matches any character.</li>
+							<li><strong> + :</strong>&nbsp; The preceding character may appear 1 or more times.</li> 
+							<li><strong> ? :</strong>&nbsp; The preceding character may appear between 0 and 1 times.</li>
+							<li><strong> \ :</strong>&nbsp; "Escapes" the following character, nullifying any special meaning it has.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="space-50px"></div>
+		<div class="space-50px"></div>
+
+
+		<div id="footer">
+			<p>&copy;Maruf Rahman 2016
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<script src="app.js"></script>
+	</body>
+</html>

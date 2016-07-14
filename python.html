@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <link rel="icon" href="img/icon_title002.png">
+		<title>Python</title>
+	</head>
+
+	<body>
+		<div class="top-div">
+			<a href="index.html">
+				<div class="rectangle" id="first-name">
+					Maruf
+				</div>
+
+				<div class="rectangle" id="last-name">
+					Rahman
+				</div>
+			</a>
+
+			<div class="navbar not-home">
+				<ul>
+					<li class="navbar-tabs"><a href="index.html">Home</a></li>
+					<li class="navbar-tabs code-tab">
+						<a href="coding_projects.html" class="code-text">Coding</a>
+						<ul class="code-dropdown-menu">
+							<li><a href="java.html">Java</a></li>
+							<li><a href="python.html">Python</a></li>
+							<li><a href="c.html">C</a></li>
+							<li><a href="sql.html">SQL</a></li>
+						</ul>
+					</li>
+					<li class="navbar-tabs"><a href="travel.html">Travel</a></li>
+					<li class="navbar-tabs"><a href="resume.html">Resume</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="divider"></div>
+		<div class="space-50px"></div>
+
+		<div>
+			<div class="project-container">
+				<div style="float:left;width:29%;margin-top:115px;">
+					<img style="width:98%;height:250px;box-shadow:5px 5px 5px rgb(170, 170, 170);" src="img/img-scheme.jpg" />
+					<div class="resume-dwnld-btn" style="width:130px;;line-height:40px;margin-top:20px;">
+						<a href="proj/scheme.zip">Download</a>
+					</div>
+				</div>
+
+				<div class="project-detail" style="float:right;width:68%;">
+					<h1 style="background-color:rgb(0, 176, 240);">Scheme Interpreter</h1>
+					<div style="padding: 0 20px 0 20px;">
+						This application is written in Python and is an interpreter for the Scheme programming language. In case you forgot, Scheme is the programming language where you see forests of parentheses- it is easy get lost. However, it is a simple and cool programming language. Thanks to Professor John Denero for providing the skeleton code for this project. 
+						<br>
+						<br>
+						To try it out, download the zipped folder on the left and click on the 'run-scheme.bat' file (Windows Batch File). Please, note that the application requires Python3 to be installed in the computer.
+						<br>
+						<br>
+						In addition to the interactive mode, the application also interprets .scm files. Instead of running the batch file, the following command should be run on the terminal from the application's directory:
+						<br>
+						<br>
+						<span style="background-color:rgb(220,220,220);padding:7px;border-radius:5px;">python3 scheme.pyc file.scm</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="space-50px"></div>
+		<div class="space-50px"></div>
+
+		<div>
+			<div class="project-container">
+				<div class="project-detail" style="float:left;width:75%">
+					<h1 style="background-color:rgb(255, 95, 95);">Hog</h1>
+					<div style="padding: 0 20px 0 20px;">
+						Hog is a dice game where two players alternate turns trying to reach 100 points first. On each turn, the current player chooses some number of dice to roll, up to 10. That player's score for the turn is the sum of the dice outcomes, unless any of the dice comes up a 1, in which case the score for the turn is only 1 point (the Pig out rule).
+						<br>
+						<br>
+						<span style="text-decoration:underline; font-weight:bold;">Special rules:</span> <br>
+						<strong>Free bacon: </strong> A player who chooses to roll zero dice scores one more than the absolute difference in the digits of the opponent's two-digit score. <br>
+						<strong>Hog wild:</strong> If the sum of both players' total scores is a multiple of seven (e.g., 14, 21, 35), then the current player rolls four-sided dice instead of the usual six-sided dice. <br>
+						<strong>Swine swap:</strong> If at the end of a turn one of the player's total score is exactly double the other's, then the players swap total scores. <br>
+						<br>
+						Thanks to Professor John Denero for providing the skeleton code for this project. To try it out, download the zipped folder on the right and click on the 'play-hog.bat' file (Windows Batch File). Please, note that the application requires Python3 to be installed in the computer.
+					</div>
+				</div>
+
+				<div style="float:right;width:21%;margin-top:135px;">
+					<img style="width:98%;height:250px;box-shadow:5px 5px 5px rgb(170, 170, 170);" src="img/img-hog.jpg" />
+					<div class="resume-dwnld-btn" style="width:130px;line-height:40px;margin-top:40px;">
+						<a href="proj/hog.zip">Download</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="space-50px"></div>
+		<div class="space-50px"></div>
+
+		<div>
+			<div class="project-container">
+				<div class="project-detail" style="float:right;width:85%;">
+					<h1 style="background-color: rgb(255, 236, 78);">Firewall</h1>
+					<div style="padding: 0 20px 0 20px;">
+						This application was run by the firewall of a VM provided by UC Berkeley and set up in my personal computer. The application reads rules from a configuration file and controls packet traffic accordingly.  
+						<br>
+						<br>
+						<strong>Rules format:</strong> [verdict] [protocol] [external_IP_address/country_code] [external_port/range]<br>
+						<strong>e.g.</strong><br>
+						<span style="margin:80px;">drop icmp any 8</span><br>
+						<span style="margin:80px;">drop tcp au any</span><br>
+						<br>
+						<strong>DNS</strong> query packets can also be controlled:<br>
+						<span style="margin:80px;">drop dns *.example.com</span><br>
+						<br>
+						On startup, the application saves all the rules in data structures and applies them every time it encounters a packet.  
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="space-50px"></div>
+		<div class="space-50px"></div>
+
+
+		<div id="footer">
+			<p>&copy;Maruf Rahman 2016
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<script src="app.js"></script>
+	</body>
+</html>

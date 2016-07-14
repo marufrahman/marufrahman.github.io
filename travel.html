@@ -26,10 +26,10 @@
 					<li class="navbar-tabs code-tab">
 						<a href="coding_projects.html" class="code-text">Coding</a>
 						<ul class="code-dropdown-menu">
-							<li><a href="under-construction.html">Java</a></li>
-							<li><a href="under-construction.html">Python</a></li>
-							<li><a href="under-construction.html">C</a></li>
-							<li><a href="under-construction.html">SQL</a></li>
+							<li><a href="java.html">Java</a></li>
+							<li><a href="python.html">Python</a></li>
+							<li><a href="c.html">C</a></li>
+							<li><a href="sql.html">SQL</a></li>
 						</ul>
 					</li>
 					<li class="navbar-tabs"><a href="travel.html">Travel</a></li>
@@ -49,135 +49,327 @@
 			</div>
 		</div>
 
+		<div style="height:25px"></div>
+
 		<div>
 			<div id="slide-control">
-				<span class="glyphicon glyphicon-chevron-left" id="left-arrow" aria-hidden="true"></span>
-				<ul class="diams-list">
-					<li class="diams active-diam" id="diams-1">&diams;</li>
-					<li class="diams" id="diams-2">&diams;</li>
-					<li class="diams" id="diams-3">&diams;</li>
-					<li class="diams" id="diams-4">&diams;</li>
-				</ul>
+				<span class="glyphicon glyphicon-chevron-left" id="left-arrow" style="margin-right:17px;" aria-hidden="true"></span>
+				<div class="diams active-diam" id="diams-1">&diams;</div>
+				<div class="diams" id="diams-2">&diams;</div>
+				<div class="diams" id="diams-3">&diams;</div>
+				<div class="diams" id="diams-4">&diams;</div>
 				<span class="glyphicon glyphicon-chevron-right" id="right-arrow" aria-hidden="true"></span>
 			</div>
 		</div>
 
-		<div class="space-50px"></div>
+		<!-- <div style="height:25px"></div> -->
 
 		<div class="albums">
-			<a href="under-construction.html"><div class="album-box album-box-left" id="australia">
-				<img class="album-cover" src="img/img-aus.jpg" />
+			<div class="album-box album-box-left" id="au">
+				<img class="album-cover" src="img/img-au.jpg" />
 				<div class="album-title">
 					Australia
 				</div>
-			</div></a>
+			</div>
 
-			<a href="under-construction.html"><div class="album-box album-box-middle" id="bangladesh">
+			<div class="album-box album-box-middle" id="bd">
 				<img class="album-cover" src="img/img-bd.jpg" />
 				<div class="album-title">
 					Bangladesh
 				</div>
-			</div></a>
+			</div>
 
-			<a href="under-construction.html"><div class="album-box album-box-right" id="canada">
+			<div class="album-box album-box-right" id="ca">
 				<img class="album-cover" src="img/img-ca.jpg" />
 				<div class="album-title">
 					Canada
 				</div>
-			</div></a>
+			</div>
+		</div>
+
+		<div class="album-window" id="album-window-row1">
+			<div style="height:65px">
+				<div class="album-window-close">
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+				</div>
+			</div>
+
+			<div class="album-window-box">
+				<div class="album-window-box-left">
+					<div style="height:80%;margin-bottom:30px;position:relative;">
+						<img class="album-img active-album-img" id="album-img-1" />
+						<img class="album-img" id="album-img-2" />
+						<img class="album-img" id="album-img-3" />
+						<img class="album-img" id="album-img-4" />
+						<img class="album-img" id="album-img-5" />
+					</div>
+
+					<div class="album-window-control">
+						<span class="glyphicon glyphicon-chevron-left" id="left-arrow" aria-hidden="true" style="margin-top:8px;"></span>
+							<img class="album-thumbnail active-album-thumbnail" id="album-thumbnail-1"/> 
+							<img class="album-thumbnail" id="album-thumbnail-2"/>
+							<img class="album-thumbnail" id="album-thumbnail-3"/>
+							<img class="album-thumbnail" id="album-thumbnail-4"/>
+							<img class="album-thumbnail" id="album-thumbnail-5"/>
+						<span class="glyphicon glyphicon-chevron-right" id="right-arrow" aria-hidden="true" style="margin-top:8px;"></span>
+					</div>
+				</div>
+
+				<div class="album-window-box-detail">
+					<h1 class="album-box-heading1"></h1>
+					<div class="space-50px"></div>
+					<h3 class="album-box-heading2">Places I have visited: </h3>
+					<p class="album-box-p1"></p>
+					<p class="album-box-p2"></p>
+				</div>
+			</div>
 		</div>
 
 		<div class="albums">
-			<a href="under-construction.html"><div class="album-box album-box-left" id="denmark">
+			<div class="album-box album-box-left" id="dk">
 				<img class="album-cover" src="img/img-dk.jpg" />
 				<div class="album-title">
 					Denmark
 				</div>
-			</div></a>
+			</div>
 
-			<a href="under-construction.html"><div class="album-box album-box-middle" id="france">
+			<div class="album-box album-box-middle" id="fr">
 				<img class="album-cover" src="img/img-fr.jpg" />
 				<div class="album-title">
 					France
 				</div>
-			</div></a>
+			</div>
 
-			<a href="under-construction.html"><div class="album-box album-box-right" id="germany">
+			<div class="album-box album-box-right" id="de">
 				<img class="album-cover" src="img/img-de.jpg" />
 				<div class="album-title">
 					Germany
 				</div>
-			</div></a>
+			</div>
+		</div>
+
+		<div class="album-window" id="album-window-row2">
+			<div style="height:65px">
+				<div class="album-window-close">
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+				</div>
+			</div>
+
+			<div class="album-window-box">
+				<div class="album-window-box-left">
+					<div style="height:80%;margin-bottom:30px;position:relative;">
+						<img class="album-img active-album-img" id="album-img-1" />
+						<img class="album-img" id="album-img-2" />
+						<img class="album-img" id="album-img-3" />
+						<img class="album-img" id="album-img-4" />
+						<img class="album-img" id="album-img-5" />
+					</div>
+
+					<div class="album-window-control">
+						<span class="glyphicon glyphicon-chevron-left" id="left-arrow" aria-hidden="true" style="margin-top:8px;"></span>
+							<img class="album-thumbnail active-album-thumbnail" id="album-thumbnail-1"/> 
+							<img class="album-thumbnail" id="album-thumbnail-2"/>
+							<img class="album-thumbnail" id="album-thumbnail-3"/>
+							<img class="album-thumbnail" id="album-thumbnail-4"/>
+							<img class="album-thumbnail" id="album-thumbnail-5"/>
+						<span class="glyphicon glyphicon-chevron-right" id="right-arrow" aria-hidden="true" style="margin-top:8px;"></span>
+					</div>
+				</div>
+
+				<div class="album-window-box-detail">
+					<h1 class="album-box-heading1"></h1>
+					<div class="space-50px"></div>
+					<h3 class="album-box-heading2">Places I have visited: </h3>
+					<p class="album-box-p1"></p>
+					<p class="album-box-p2"></p>
+				</div>
+			</div>
 		</div>
 
 		<div class="albums">
-			<a href="under-construction.html"><div class="album-box album-box-left" id="japan">
+			<div class="album-box album-box-left" id="jp">
 				<img class="album-cover" src="img/img-jp.jpg" />
 				<div class="album-title">
 					Japan
 				</div>
-			</div></a>
+			</div>
 
-			<a href="under-construction.html"><div class="album-box album-box-middle" id="malaysia">
+			<div class="album-box album-box-middle" id="ml">
 				<img class="album-cover" src="img/img-ml.jpg" />
 				<div class="album-title">
 					Malaysia
 				</div>
-			</div></a>
+			</div>
 
-			<a href="under-construction.html"><div class="album-box album-box-right" id="singapore">
+			<div class="album-box album-box-right" id="sg">
 				<img class="album-cover" src="img/img-sg.jpg" />
 				<div class="album-title">
 					Singapore
 				</div>
-			</div></a>
+			</div>
+		</div>
+
+		<div class="album-window" id="album-window-row3">
+			<div style="height:65px">
+				<div class="album-window-close">
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+				</div>
+			</div>
+
+			<div class="album-window-box">
+				<div class="album-window-box-left">
+					<div style="height:80%;margin-bottom:30px;position:relative;">
+						<img class="album-img active-album-img" id="album-img-1" />
+						<img class="album-img" id="album-img-2" />
+						<img class="album-img" id="album-img-3" />
+						<img class="album-img" id="album-img-4" />
+						<img class="album-img" id="album-img-5" />
+					</div>
+
+					<div class="album-window-control">
+						<span class="glyphicon glyphicon-chevron-left" id="left-arrow" aria-hidden="true" style="margin-top:8px;"></span>
+							<img class="album-thumbnail active-album-thumbnail" id="album-thumbnail-1"/> 
+							<img class="album-thumbnail" id="album-thumbnail-2"/>
+							<img class="album-thumbnail" id="album-thumbnail-3"/>
+							<img class="album-thumbnail" id="album-thumbnail-4"/>
+							<img class="album-thumbnail" id="album-thumbnail-5"/>
+						<span class="glyphicon glyphicon-chevron-right" id="right-arrow" aria-hidden="true" style="margin-top:8px;"></span>
+					</div>
+				</div>
+
+				<div class="album-window-box-detail">
+					<h1 class="album-box-heading1"></h1>
+					<div class="space-50px"></div>
+					<h3 class="album-box-heading2">Places I have visited: </h3>
+					<p class="album-box-p1"></p>
+					<p class="album-box-p2"></p>
+				</div>
+			</div>
 		</div>
 
 		<div class="albums">
-			<a href="under-construction.html"><div class="album-box album-box-left" id="sweden">
+			<div class="album-box album-box-left" id="se">
 				<img class="album-cover" src="img/img-se.jpg" />
 				<div class="album-title">
 					Sweden
 				</div>
-			</div></a>
+			</div>
 
-			<a href="under-construction.html"><div class="album-box album-box-middle" id="switzerland">
+			<div class="album-box album-box-middle" id="ch">
 				<img class="album-cover" src="img/img-ch.jpg" />
 				<div class="album-title">
 					Switzerland
 				</div>
-			</div></a>
+			</div>
 
-			<a href="under-construction.html"><div class="album-box album-box-right" id="thailand">
+			<div class="album-box album-box-right" id="th">
 				<img class="album-cover" src="img/img-th.jpg" />
 				<div class="album-title">
 					Thailand
 				</div>
-			</div></a>
+			</div>
+		</div>
+
+		<div class="album-window" id="album-window-row4">
+			<div style="height:65px">
+				<div class="album-window-close">
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+				</div>
+			</div>
+
+			<div class="album-window-box">
+				<div class="album-window-box-left">
+					<div style="height:80%;margin-bottom:30px;position:relative;">
+						<img class="album-img active-album-img" id="album-img-1" />
+						<img class="album-img" id="album-img-2" />
+						<img class="album-img" id="album-img-3" />
+						<img class="album-img" id="album-img-4" />
+						<img class="album-img" id="album-img-5" />
+					</div>
+
+					<div class="album-window-control">
+						<span class="glyphicon glyphicon-chevron-left" id="left-arrow" aria-hidden="true" style="margin-top:8px;"></span>
+							<img class="album-thumbnail active-album-thumbnail" id="album-thumbnail-1"/> 
+							<img class="album-thumbnail" id="album-thumbnail-2"/>
+							<img class="album-thumbnail" id="album-thumbnail-3"/>
+							<img class="album-thumbnail" id="album-thumbnail-4"/>
+							<img class="album-thumbnail" id="album-thumbnail-5"/>
+						<span class="glyphicon glyphicon-chevron-right" id="right-arrow" aria-hidden="true" style="margin-top:8px;"></span>
+					</div>
+				</div>
+
+				<div class="album-window-box-detail">
+					<h1 class="album-box-heading1"></h1>
+					<div class="space-50px"></div>
+					<h3 class="album-box-heading2">Places I have visited: </h3>
+					<p class="album-box-p1"></p>
+					<p class="album-box-p2"></p>
+				</div>
+			</div>
 		</div>
 
 		<div class="albums">
-			<a href="under-construction.html"><div class="album-box album-box-left" id="us">
+			<div class="album-box album-box-left" id="us">
 				<img class="album-cover" src="img/img-us.jpg" />
 				<div class="album-title">
 					United States
 				</div>
-			</div></a>
+			</div>
 
-			<!-- <a href="under-construction.html"><div class="album-box album-box-middle" id="">
+			<!-- <div class="album-box album-box-middle" id="">
 				<img class="album-cover" src="img/img-.jpg" />
 				<div class="album-title">
 					
 				</div>
-			</div></a>
+			</div>
 
-			<a href="under-construction.html"><div class="album-box album-box-right" id="">
+			<div class="album-box album-box-right" id="">
 				<img class="album-cover" src="img/img-.jpg" />
 				<div class="album-title">
 					
 				</div>
-			</div></a> -->
+			</div> -->
 		</div>
+
+		<div class="album-window" id="album-window-row5">
+			<div style="height:65px">
+				<div class="album-window-close">
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+				</div>
+			</div>
+
+			<div class="album-window-box">
+				<div class="album-window-box-left">
+					<div style="height:80%;margin-bottom:30px;position:relative;">
+						<img class="album-img active-album-img" id="album-img-1" />
+						<img class="album-img" id="album-img-2" />
+						<img class="album-img" id="album-img-3" />
+						<img class="album-img" id="album-img-4" />
+						<img class="album-img" id="album-img-5" />
+					</div>
+
+					<div class="album-window-control">
+						<span class="glyphicon glyphicon-chevron-left" id="left-arrow" aria-hidden="true" style="margin-top:8px;"></span>
+							<img class="album-thumbnail active-album-thumbnail" id="album-thumbnail-1"/> 
+							<img class="album-thumbnail" id="album-thumbnail-2"/>
+							<img class="album-thumbnail" id="album-thumbnail-3"/>
+							<img class="album-thumbnail" id="album-thumbnail-4"/>
+							<img class="album-thumbnail" id="album-thumbnail-5"/>
+						<span class="glyphicon glyphicon-chevron-right" id="right-arrow" aria-hidden="true" style="margin-top:8px;"></span>
+					</div>
+				</div>
+
+				<div class="album-window-box-detail">
+					<h1 class="album-box-heading1"></h1>
+					<div class="space-50px"></div>
+					<h3 class="album-box-heading2">Places I have visited: </h3>
+					<p class="album-box-p1"></p>
+					<p class="album-box-p2"></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="space-50px"></div>
 
 		<div id="footer">
 			<p>&copy;Maruf Rahman 2016
