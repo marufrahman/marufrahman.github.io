@@ -324,8 +324,9 @@ body > div {
 }
 
 .diams {
+	font-family: serif;
 	color: gray;
-	font-size: 24px;
+	font-size: 18px;
 	display: inline;
 	vertical-align: top;
 	cursor: pointer;
