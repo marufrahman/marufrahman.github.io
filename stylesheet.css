@@ -304,13 +304,13 @@ body > div {
 
 #slide-control {
 	font-size: 24px;
-	/*color: black;*/
-	width: 360px;
+	color: black;
+	width: 200px;
 	/*height: 100px;*/
 	margin: auto;
 	/*padding-top: 25px;*/
 	overflow: hidden;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 
 #left-arrow {
