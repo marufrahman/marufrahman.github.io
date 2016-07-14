@@ -325,6 +325,7 @@ body > div {
 
 .diams {
 	font-family: serif;
+	text-decoration: none;
 	color: gray;
 	font-size: 18px;
 	display: inline;
