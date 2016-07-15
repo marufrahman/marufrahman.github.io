@@ -200,62 +200,70 @@ var main = function() {
 	});
 
 	$('#bd').click(function() {
-		var visited_places = "";
+		var visited_places = "Dhaka, Narayanganj, Munshiganj, Gazipur, Madaripur, Shariatpur, Tangail, Mymensingh, Jamalpur, Noakhali, "
+					+ "Lakshmipur, Chandpur, Comilla, Feni, Chittagong, Cox's Bazar, St. Martin's Island, Rajshahi, Natore, Pabna, "
+					+ "Sirajganj, Sylhet, Hobiganj, Moulvibazar, Patuakhali";
 		active_country = prepare_album(row_num, active_country, "bd", "Bangladesh", visited_places);
 	});
 
 	$('#ca').click(function() {
-		var visited_places = "";
+		var visited_places = "Toronto, Ottawa, Kingston, Montreal, Mont. Tremblant, Calgary, Banff National Park, Niagara Falls";
 		active_country = prepare_album(row_num, active_country, "ca", "Canada", visited_places);
 	});
 
 	$('#dk').click(function() {
-		var visited_places = "";
+		var visited_places = "Nyhavn, Copenhagen Opera House, The Little Mermaid, Tivoli Gardens, Amalienborg, "
+					+ "Christiania, Frederik's Church, Borsen, Stroget";
 		active_country = prepare_album(row_num, active_country, "dk", "Denmark", visited_places);
 	});
 
 	$('#fr').click(function() {
-		var visited_places = "";
+		var visited_places = "Eiffel Tower, Musee du Louvre, Chatelet, Paris Gare De Lyon";
 		active_country = prepare_album(row_num, active_country, "fr", "France", visited_places);
 	});
 
 	$('#de').click(function() {
-		var visited_places = "";
+		var visited_places = "Berlin Wall, Brandenburg Gate, Reichstag Building (German Parliament), Potsdamer Platz, "
+					+ "Alexanderplatz, Charlottenburg Palace, Hauptbahnof, Gesundbrunnen";
 		active_country = prepare_album(row_num, active_country, "de", "Germany", visited_places);
 	});
 
 	$('#jp').click(function() {
-		var visited_places = "";
+		var visited_places = "Tokyo Skytree, Tokyo Tower, Asa Kusa Temple, Kings Palace, Tokyo Station, Mt. Fuji, " 
+					+ "Umi Hotaro, Shibuya, Ueno, Akihabara, Shinjuku, Odaiba, Nikko, Kamata, Shijuoka, Okitsu";
 		active_country = prepare_album(row_num, active_country, "jp", "Japan", visited_places);
 	});
 
 	$('#ml').click(function() {
-		var visited_places = "";
+		var visited_places = "The Kuala Lumpur/Petronus Tower, The Pavilion, Putrajaya Mosque, Genting Highland, "
+					+ "Langkawi";
 		active_country = prepare_album(row_num, active_country, "ml", "Malaysia", visited_places);
 	});
 
 	$('#sg').click(function() {
-		var visited_places = "";
+		var visited_places = "Marina Bay, Marina Bay Sands, Downtown, Little India";
 		active_country = prepare_album(row_num, active_country, "sg", "Singapore", visited_places);
 	});
 
 	$('#se').click(function() {
-		var visited_places = "";
+		var visited_places = "Stockholm City Center, Gamla Stan, Slussen, ";
 		active_country = prepare_album(row_num, active_country, "se", "Sweden", visited_places);
 	});
 
 	$('#ch').click(function() {
-		var visited_places = "";
+		var visited_places = "Geneva, Interlaken, Lungern, Lauterbrunnen, Grindelwald, Wengen, Lausanne, Bern, "
+		   			+ " Lucerne, Zurich, Zug, Altdorf";
 		active_country = prepare_album(row_num, active_country, "ch", "Switzerland", visited_places);
 	});
 
 	$('#th').click(function() {
-		var visited_places = "";
+		var visited_places = "Phi Phi Islands, Maya Bay, James Bond Island, Phuket, Bangla Road, Patong Beach";
 		active_country = prepare_album(row_num, active_country, "th", "Thailand", visited_places);
 	});
 
 	$('#us').click(function() {
-		var visited_places = "";
+		var visited_places = "California, Oregon, Washington, Arizona, Nevada, Utah, Idaho, Wyoming, Montana, New York,"
+					+ "New Jersey, Pennsylvania, Massachusetts, Florida";
 		active_country = prepare_album(row_num, active_country, "us", "United States", visited_places);
 	});
 
@@ -318,6 +326,57 @@ var main = function() {
 		currentThumbnail.removeClass('active-album-thumbnail');
 		prevThumbnail.addClass('active-album-thumbnail');
 	});
+
+	$('.album-window-control #album-thumbnail-1').click(function() {
+		var active_album_row = "#album-window-" + row_num[active_country];
+
+		$(active_album_row + ' .active-album-img').fadeOut(500).removeClass('active-album-img');
+		$(active_album_row + ' #album-img-1').fadeIn(500).addClass('active-album-img');
+
+		$(active_album_row + ' .active-album-thumbnail').removeClass('active-album-thumbnail');
+		$(active_album_row + ' #album-thumbnail-1').addClass('active-album-thumbnail');
+	});
+
+	$('.album-window-control #album-thumbnail-2').click(function() {
+		var active_album_row = "#album-window-" + row_num[active_country];
+
+		$(active_album_row + ' .active-album-img').fadeOut(500).removeClass('active-album-img');
+		$(active_album_row + ' #album-img-2').fadeIn(500).addClass('active-album-img');
+
+		$(active_album_row + ' .active-album-thumbnail').removeClass('active-album-thumbnail');
+		$(active_album_row + ' #album-thumbnail-2').addClass('active-album-thumbnail');
+	});
+
+	$('.album-window-control #album-thumbnail-3').click(function() {
+		var active_album_row = "#album-window-" + row_num[active_country];
+
+		$(active_album_row + ' .active-album-img').fadeOut(500).removeClass('active-album-img');
+		$(active_album_row + ' #album-img-3').fadeIn(500).addClass('active-album-img');
+
+		$(active_album_row + ' .active-album-thumbnail').removeClass('active-album-thumbnail');
+		$(active_album_row + ' #album-thumbnail-3').addClass('active-album-thumbnail');
+	});
+
+	$('.album-window-control #album-thumbnail-4').click(function() {
+		var active_album_row = "#album-window-" + row_num[active_country];
+
+		$(active_album_row + ' .active-album-img').fadeOut(500).removeClass('active-album-img');
+		$(active_album_row + ' #album-img-4').fadeIn(500).addClass('active-album-img');
+
+		$(active_album_row + ' .active-album-thumbnail').removeClass('active-album-thumbnail');
+		$(active_album_row + ' #album-thumbnail-4').addClass('active-album-thumbnail');
+	});
+
+	$('.album-window-control #album-thumbnail-5').click(function() {
+		var active_album_row = "#album-window-" + row_num[active_country];
+
+		$(active_album_row + ' .active-album-img').fadeOut(500).removeClass('active-album-img');
+		$(active_album_row + ' #album-img-5').fadeIn(500).addClass('active-album-img');
+
+		$(active_album_row + ' .active-album-thumbnail').removeClass('active-album-thumbnail');
+		$(active_album_row + ' #album-thumbnail-5').addClass('active-album-thumbnail');
+	});
+
 
 	// code tab dropdown menu
 	$('.code-text').hover(function() {

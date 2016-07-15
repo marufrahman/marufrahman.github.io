@@ -462,11 +462,13 @@ body > div {
 	width: 75px;
 	margin-left: 2px;
 	opacity: 0.5;
+	cursor: pointer;
 }
 
 .active-album-thumbnail {
 	opacity: 1.0;
 	border: 3px solid black;
+	pointer-events: none;
 }
 
 .album-box-heading1 {
