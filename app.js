@@ -246,7 +246,7 @@ var main = function() {
 	});
 
 	$('#se').click(function() {
-		var visited_places = "Stockholm City Center, Gamla Stan, Slussen, ";
+		var visited_places = "Stockholm City Center, Gamla Stan, Slussen, Vaxholm";
 		active_country = prepare_album(row_num, active_country, "se", "Sweden", visited_places);
 	});
 
