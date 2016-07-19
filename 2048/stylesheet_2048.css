@@ -1,0 +1,50 @@
+html, body {
+	background-color: rgb(255,245,186);
+	position: absolute;
+}
+
+body > div {
+	width: 1349px;
+	margin: auto;
+	position: relative;
+	/*border: 2px solid purple;*/
+	overflow: hidden;
+	background-color: rgb(255,245,186);
+}
+
+.game-text {
+	line-height: 85px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: Monotype Corsiva, Cursive;
+	font-size: 32px;
+}
+
+.board-2048 {
+	width: 468px; 
+	margin: auto; 
+	border: 3px solid black;
+	padding-bottom: 5px;
+}
+
+.board-2048-row {
+	height:145px; 
+}
+
+.block-2048 {
+	display: inline-block;
+	width: 100px; 
+	height: 100px;
+	/*border: 1px solid blue; */
+	background-color: rgba(170, 170, 170, 0.5);
+	margin-left: 10px;
+	margin-top: 9px;
+	overflow: hidden;
+}
+
+.block-2048-img {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	z-index: 100;
+}
