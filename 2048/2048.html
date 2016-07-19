@@ -3,12 +3,44 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="stylesheet_2048.css" />
+		<link rel="stylesheet" href="../stylesheet.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
         <!-- <link rel="icon" href="img/icon_title002.png"> -->
 		<title>2048</title>
 	</head>
 
 	<body>
+
+		<div class="top-div">
+			<a href="../index.html">
+				<div class="rectangle" id="first-name">
+					Maruf
+				</div>
+
+				<div class="rectangle" id="last-name">
+					Rahman
+				</div>
+			</a>
+
+			<div class="navbar not-home">
+				<ul>
+					<li class="navbar-tabs"><a href="../index.html">Home</a></li>
+					<li class="navbar-tabs code-tab">
+						<a href="../coding_projects.html" class="code-text">Coding</a>
+						<ul class="code-dropdown-menu">
+							<li><a href="../java.html">Java</a></li>
+							<li><a href="../python.html">Python</a></li>
+							<li><a href="../c.html">C</a></li>
+							<li><a href="../sql.html">SQL</a></li>
+						</ul>
+					</li>
+					<li class="navbar-tabs"><a href="../travel.html">Travel</a></li>
+					<li class="navbar-tabs"><a href="../resume.html">Resume</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="divider"></div>
 		<div class="game-text">2048 Game</div>
 
 		<div>
@@ -43,10 +75,16 @@
 			</div>
 		</div>
 
-		<div class="game-text" id="verdict"></div>
+		<div class="game-text" id="verdict" style="height:100px"></div>
+		<div class="space-50px"></div>
+
+		<div id="footer">
+			<p>&copy;Maruf Rahman 2016
+		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     	<script src="app_2048.js"></script>
+    	<script src="../app.js"></script>
 
 	</body>
 </html>

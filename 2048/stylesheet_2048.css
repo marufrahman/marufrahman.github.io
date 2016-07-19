@@ -1,5 +1,5 @@
 html, body {
-	background-color: rgb(255,245,186);
+	/*background-color: rgb(255,245,186);*/
 	position: absolute;
 }
 
@@ -9,7 +9,7 @@ body > div {
 	position: relative;
 	/*border: 2px solid purple;*/
 	overflow: hidden;
-	background-color: rgb(255,245,186);
+	/*background-color: rgb(255,245,186);*/
 }
 
 .game-text {

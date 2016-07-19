@@ -296,12 +296,16 @@ var main = function() {
 	$(document).keydown(function(event) {
 		if (!b.isFinished()) {
 			if (event.which === 38) {
+				event.preventDefault();
 				b.playUp();
 			} else if (event.which === 37) {
+				event.preventDefault();
 				b.playLeft();
 			} else if (event.which === 40) {
+				event.preventDefault();
 				b.playDown();
 			} else if (event.which === 39) {
+				event.preventDefault();
 				b.playRight();
 			}
 
