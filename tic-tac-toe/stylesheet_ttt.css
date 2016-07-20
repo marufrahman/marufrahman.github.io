@@ -1,7 +1,3 @@
-html, body {
-	position: absolute;
-}
-
 body > div {
 	width: 1349px;
 	margin: auto;

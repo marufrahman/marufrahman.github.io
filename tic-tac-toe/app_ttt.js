@@ -137,7 +137,6 @@ board = function() {
 
 	}
 
-
 	this.ai_play = function() {
 		var box_num = 0;
 		// capture the center
@@ -203,7 +202,7 @@ board = function() {
 				max = utilities[i];
 			}
 		}
-
+		// prefer corner over middle when both empty, no match and no block
 		if (max === 10.0) {
 			max += 1.0;
 		}
@@ -271,7 +270,6 @@ board = function() {
 		// cross
 		return -10.0;
 	};
-
 };
 
 main = function() {
@@ -285,14 +283,14 @@ main = function() {
 			if (b.canPlay(id)) {
 				b.play(id);
 				if (b.isFinished()) {
-					$('#verdict').text("Game Over!");
+					$('#verdict').text("Game Over! Press SPACE to start over!");
 					game_over = true;
 				}
 
 				if (!game_over) {
 					b.ai_play();
 					if (b.isFinished()) {
-						$('#verdict').text("Game Over!");
+						$('#verdict').text("Game Over! Press SPACE to start over!");
 						game_over = true;
 					}
 				}
