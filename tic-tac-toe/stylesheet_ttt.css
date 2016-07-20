@@ -18,15 +18,15 @@ body > div {
 	font-size: 32px;
 }
 
-.board-2048 {
-	width: 468px; 
+.board-ttt {
+	width: 355px; 
 	margin: auto; 
-	border: 3px solid black;
+	/*border: 3px solid black;*/
 	padding-bottom: 5px;
 	border-radius: 5px;
 }
 
-.block-2048 {
+.block-ttt {
 	display: inline-block;
 	width: 100px; 
 	height: 100px;
@@ -38,7 +38,7 @@ body > div {
 	overflow: hidden;
 }
 
-.block-2048-img {
+.block-ttt-img {
 	position: absolute;
 	width: 100px;
 	height: 100px;

@@ -8,7 +8,7 @@
 
 var ANIMATION_TIME = 300;
 
- var numberPiece = function(number) {
+var numberPiece = function(number) {
  	this.number = number;
  	this.merged = false;
 
