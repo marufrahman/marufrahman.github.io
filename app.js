@@ -1,3 +1,16 @@
+// code for the sliding-album-window: avoids code redundancy
+var album_html = '<div style="height:65px"><div class="album-window-close"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></div></div>'
+ + '<div class="album-window-box"><div class="album-window-box-left"><div style="height:80%;margin-bottom:30px;position:relative;">'
+ + '<img class="album-img active-album-img" id="album-img-1" /><img class="album-img" id="album-img-2" />'
+ + '<img class="album-img" id="album-img-3" /><img class="album-img" id="album-img-4" /><img class="album-img" id="album-img-5" /></div>'
+ + '<div class="album-window-control"><span class="glyphicon glyphicon-chevron-left" id="left-arrow" aria-hidden="true" style="margin:8px 5px 0 0;"></span>'
+ + '<img class="album-thumbnail active-album-thumbnail" id="album-thumbnail-1"/>'
+ + '<img class="album-thumbnail" id="album-thumbnail-2"/><img class="album-thumbnail" id="album-thumbnail-3"/>' 
+ + '<img class="album-thumbnail" id="album-thumbnail-4"/><img class="album-thumbnail" id="album-thumbnail-5"/>'
+ + '<span class="glyphicon glyphicon-chevron-right" id="right-arrow" aria-hidden="true" style="margin-top:8px;"></span></div></div>'
+ + '<div class="album-window-box-detail"><h1 class="album-box-heading1"></h1><div class="space-50px"></div>'
+ + '<h3 class="album-box-heading2">Places I have visited: </h3><p class="album-box-p1"></p><p class="album-box-p2"></p></div></div>';
+
 var slideshow = function() {
 	var currentSlide = $('.active-slide');
 	var nextSlide = currentSlide.next();
@@ -70,6 +83,9 @@ var set_first_img_active = function(curr_album_row) {
 }
 
 var main = function() {
+	for (var i = 1; i <= 5; i++) {
+		$('#album-window-row' + i).html(album_html);
+	}
 	// home page pic info
 	$('#pic1').hover(function() {
 		$('#pic1-detail').show();
