@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="../stylesheet.css" />
+		<link rel="stylesheet" href="stylesheet_flee.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <link rel="icon" href="../img/icon_title002.png">
+		<title>Flee</title>
+	</head>
+
+	<body>
+		<div class="top-div">
+			<a href="../index.html">
+				<div class="rectangle" id="first-name">
+					Maruf
+				</div>
+
+				<div class="rectangle" id="last-name">
+					Rahman
+				</div>
+			</a>
+
+			<div class="navbar not-home">
+				<ul>
+					<li class="navbar-tabs"><a href="../index.html">Home</a></li>
+					<li class="navbar-tabs code-tab">
+						<a href="../coding_projects.html" class="code-text">Coding</a>
+						<ul class="code-dropdown-menu">
+							<li><a href="../java.html">Java</a></li>
+							<li><a href="../python.html">Python</a></li>
+							<li><a href="../c.html">C</a></li>
+							<li><a href="../sql.html">SQL</a></li>
+						</ul>
+					</li>
+					<li class="navbar-tabs"><a href="../travel.html">Travel</a></li>
+					<li class="navbar-tabs"><a href="../resume.html">Resume</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="divider"></div>
+		<div class="space-50px"></div>
+
+		<div style="position:relative;">
+			<div class="box">
+				<div id="player"></div>
+			</div>
+
+			<div class="time-box">
+				<p>Time</p>
+				<p class="time">00 : 00</p>
+				<p class="verdict" ></p>
+			</div>
+		</div>
+
+		<div class="space-50px"></div>
+		<div class="space-50px"></div>
+		<div class="space-50px"></div>
+
+		<div>
+			<div class="flee-detail">
+				<h2 style="border:2px solid black;padding:10px">Flee</h2>
+				<h3 style="margin: 45px 0 35px 0;text-decoration:underline">How To Play</h3>
+				<div>
+					<h4 class="flee-detail-section-title" style="margin-bottom:25px">Game controls:</h4>
+					<strong>Mouse:</strong> move the square <br>
+					<strong>Space:</strong> start/stop <br>
+					<strong>N:</strong> new game <br>
+					<br>
+				</div>
+				<div style="margin-top:30px;">
+					<h4 class="flee-detail-section-title">Rules of the game:</h4><br>
+					<ol style="text-align:justify;padding: 0 150px 0 150px">
+						<li>The balls speed up a little every 5 seconds.</li>
+						<li>Powers are provided randomly every 10 seconds and will be available to be collected for only 2 seconds. The powers are to be collected by moving the square over them.
+							<ul style="list-style:disc; margin:15px 0 15px 0;">
+								<li><img class="flee-detail-img" src='img/invincible.png'> : player attains invincibility for 5 seconds i.e. the game continues even if contact is made with the balls. The square turns green for the time being.</li>
+								<li><img class="flee-detail-img" src='img/shrink.png'> : the square shrinks to half its size for 8 seconds.</li>
+							</ul>
+						</li>
+						<li>The game can be paused anytime during gameplay using the space bar but player loses power effectivity time during the paused time. </li>
+					</ol>
+				</div>
+			</div>
+		</div>
+
+		<div class="space-50px"></div>
+		<div class="space-50px"></div>
+
+		<div id="footer">
+			<p>&copy;Maruf Rahman 2016</p>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<script src="app_flee.js"></script>
+    	<script src="../app.js"></script>
+	</body>
+</html> 
