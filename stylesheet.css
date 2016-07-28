@@ -139,7 +139,7 @@ body > div {
 .circle {
 	position: relative;
 	display: inline-block;
-	margin-left: 121px;
+	/*margin-left: 121px;*/
 	margin-bottom: 45px;
 	height: 170px;
 	width: 170px;
@@ -201,6 +201,15 @@ body > div {
 	margin-right: auto;
 	margin-top: 80px;
 	/*border: 2px solid red;*/
+}
+
+#container a {
+	position: relative;
+	display: inline-block;
+	width: 170px;
+	height: 170px;
+	margin-left: 121px;
+	border-radius: 100%;
 }
 
 .pic {
