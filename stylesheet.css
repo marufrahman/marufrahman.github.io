@@ -149,7 +149,7 @@ body > div {
 	background-repeat: no-repeat;
 }
 
-.circle:hover{
+.circle:hover {
 	border: 2px solid white;
 }
 
@@ -173,7 +173,6 @@ body > div {
 	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto; 
-	width: 1349px;
 	height: 200px;
 	padding-left: 168px;
 	padding-right: 168px; 	
@@ -243,21 +242,11 @@ body > div {
 	font-family: Century Gothic, Cambria, serif;	
 }
 
-#about-me p {
-	position: absolute;
-	display: inline;
-	font-family: Monotype Corsiva, Cursive;
-	font-size: 24px;
-	padding: 25px;
-	text-align: justify;
-}
-
 #footer {
 	margin-top: 25px;
 	margin-left: auto;
 	margin-right: auto;
 	height: 100px;
-	width: 1349px;
 	background-color: black;
 }
 
@@ -611,7 +600,7 @@ body > div {
 	background-color: rgb(255,245,186);
 }
 
-.resume-projects li{
+.resume-projects li {
 	margin-bottom: 5px;
 }
 
