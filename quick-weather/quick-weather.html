@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="../stylesheet.css" />
+		<link rel="stylesheet" href="stylesheet_quick-weather.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <link rel="icon" href="../img/icon_title002.png">
+		<title>Quick Weather</title>
+	</head>
+
+	<body style="font-family:Century Gothic, serif">
+		<div class="top-div">
+			<a href="../index.html">
+				<div class="rectangle" id="first-name">
+					Maruf
+				</div>
+
+				<div class="rectangle" id="last-name">
+					Rahman
+				</div>
+			</a>
+
+			<div class="navbar not-home">
+				<ul>
+					<li class="navbar-tabs"><a href="../index.html">Home</a></li>
+					<li class="navbar-tabs code-tab">
+						<a href="../coding_projects.html" class="code-text">Coding</a>
+						<ul class="code-dropdown-menu">
+							<li><a href="../java.html">Java</a></li>
+							<li><a href="../python.html">Python</a></li>
+							<li><a href="../c.html">C</a></li>
+							<li><a href="../sql.html">SQL</a></li>
+						</ul>
+					</li>
+					<li class="navbar-tabs"><a href="../travel.html">Travel</a></li>
+					<li class="navbar-tabs"><a href="../resume.html">Resume</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="divider"></div>
+
+		<div style="font-family:Century Gothic, Cursive;text-align:center;padding:10px;">
+			<h2 class="current-loc-title">Your Current City</h2>
+			<div class="title-holder"></div>
+			<div class="current-loc">
+				<div class="city" style="font-size:30px">Waiting for location...</div>
+				<div class="temperature">Getting weather info...</div>
+				<div class="weather">Getting weather info...</div>
+				<!-- <div class="wind-humidity">Getting weather info...</div> -->
+				<div class="time">Getting local time...</div>
+				<div class="day">Getting local date..</div>
+			</div>
+		</div>
+
+		<div class="space-50px"></div>
+		<div class="space-50px"></div>	
+		<div class="space-50px"></div>	
+
+		<div>
+			<h2 class="current-loc-title" style="background-color:rgb(180,0,0);margin-bottom:10px">Other Major Cities</h2>
+		</div>
+
+		<div class="space-50px"></div>	
+
+		<div class="other-cities-container"></div>
+
+		<div class="space-50px">
+			<div style="width:80%;margin:auto;text-align:right;">
+				<div>Source:</div> 
+				<div>Yahoo Weather</div>
+			</div>
+		</div>
+		<div class="space-50px"></div>		
+
+		<div id="footer">
+			<p>&copy;Maruf Rahman 2016</p>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<script src="../app.js"></script>
+    	<script src="app_quick-weather.js"></script>
+	</body>
+</html>

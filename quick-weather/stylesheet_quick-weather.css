@@ -1,0 +1,95 @@
+.current-loc-title {
+	width: 40%;
+	margin: auto;
+	padding: 20px;
+	color: white;
+	font-family: Jokerman, Century Gothic, serif;
+	text-align: center;
+	background-color: rgb(27, 140, 27);
+	border: 5px solid black;
+	border-radius: 10px;
+	box-shadow: 7px 7px 5px rgba(120,120,120,0.5);
+}
+
+.title-holder {
+	width: 20%;
+	height: 25px;
+	margin: auto;
+	border-left: 10px solid black;
+	border-right: 10px solid black;
+}
+
+.current-loc {
+	width: 40%;
+	height: 310px;
+	margin: auto;
+	padding: 15px 0 0 0;
+	border: 5px solid black;
+	border-radius: 20px;
+	box-shadow: 7px 7px 5px rgba(120,120,120,0.5);
+	background: white;
+    background: linear-gradient(rgb(71,136,255), white);
+}
+
+.city {
+	color: black;
+	margin: 15px 0 10px 0;
+	padding: 5px;
+	font-size: 30px;
+}
+
+.current-loc div {
+	font-size: 20px;
+}
+
+.other-cities {
+	width: 80%;
+	height: 270px;
+	margin: auto;
+	font-family: Century Gothic, serif;
+	/*border: 2px solid black;*/
+	padding: 10px;
+}
+
+.other-cities .time {
+	display: inline;
+	float: left;
+	font-size: 25px;
+	margin: 15px 0 0 5px;
+}
+
+.other-cities .weather {
+	text-align: right;
+	font-size: 20px;
+}
+
+.other-cities .temperature {
+	display: inline;
+	float: right;
+	font-size: 40px;
+}
+
+.other-cities>div {
+	width: 45%;
+	height: 230px;
+	padding: 0 20px 10px 20px;
+	display: inline-block;
+	border: 3px solid rgba(200, 200, 200, 0.5);
+	box-shadow: 7px 7px 7px rgba(170, 170, 170, 0.5);
+
+	background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgb(71,136,255), white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(71,136,255), white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(71,136,255), white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(71,136,255), white); /* Standard syntax */	
+}
+
+.other-cities-left {
+	float: left;
+}
+
+.other-cities-right {
+	float: right;
+}
+
+

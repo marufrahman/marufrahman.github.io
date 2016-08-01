@@ -83,6 +83,7 @@ var set_first_img_active = function(curr_album_row) {
 }
 
 var main = function() {
+	// travel page sliding down window
 	for (var i = 1; i <= 5; i++) {
 		$('#album-window-row' + i).html(album_html);
 	}
