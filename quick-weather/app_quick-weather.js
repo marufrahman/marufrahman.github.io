@@ -9,6 +9,7 @@ var getTime = function(offset) {
 
 	var min = utc[1] + offset[1];
 	min = (min < 0) ? (60 + min) : min;
+	min = (min < 10) ? ('0' + min) : min;
 
 	var time = "AM";
 
