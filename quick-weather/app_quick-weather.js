@@ -1,7 +1,7 @@
 var next = 1;
 var next_side = "left";
 var utc;
-var dst = 1;
+var dst = 0;
 
 var getTime = function(offset) {
 	var hr = (utc[0] + offset[0]) % 24;
