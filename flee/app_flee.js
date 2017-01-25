@@ -117,6 +117,7 @@ var board = function() {
 					clearTimeout(power_time);
 					clearTimeout(power_deactivate);
 					$('.verdict').text('Game Over!');
+					$('.play-again-msg').text('Press N to play again!');
 					this.game_over = true;
 					return;
 				}	
@@ -181,6 +182,7 @@ var board = function() {
 		this.balls.splice(0, this.balls.length);
 		$('.time').text("00 : 00");
 		$('.verdict').text('');
+		$('.play-again-msg').text('');
 
 		$('#player').css('width', '60px');
 		$('#player').css('height', '60px');
@@ -309,19 +311,30 @@ $(document).ready(function() {
 	// change the player on mouse movement
 	$(document).mousemove(function(event) {
 		if (starting || (run && !b.isOver())) {
-			var x = event.pageX - 45;
-			var y = event.pageY - 268;
+			// offset gives the position of the object relative to the document
+			// where as position() gives the position relative to its parent
+			var gamebox_pos = $('.box').offset();
+			var gamebox_top = gamebox_pos.top;
+			var gamebox_left = gamebox_pos.left;
 
-			if (y < -30) {
-				y = -30;
-			} else if (y > 515) {
-				y = 515;
+			// event.pageXY: returns the position of the mouse pointer
+			var x = event.pageX - parseInt(gamebox_left);
+			var y = event.pageY - parseInt(gamebox_top);
+
+			var gamebox_height = $('.box').height();
+			var gamebox_width = $('.box').width();	
+			var player_dim = $('#player').height();		
+
+			if (y < 0) {
+				y = 0;
+			} else if (y > gamebox_height - player_dim) {
+				y = gamebox_height - player_dim;
 			}
 
-			if (x < -30) {
-				x = -30;
-			} else if (x > 970) {
-				x = 970;
+			if (x < 0) {
+				x = 0;
+			} else if (x > gamebox_width - player_dim) {
+				x = gamebox_width - player_dim;
 			}
 
 			$('#player').css('left', x + 'px');

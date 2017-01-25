@@ -63,6 +63,10 @@
 	color: rgb(150,0,0);
 }
 
+.play-again-msg {
+	font-size: 20px;
+}
+
 .flee-detail {
 	width: 90%;
 	margin: auto;
