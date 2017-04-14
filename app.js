@@ -202,7 +202,9 @@ var main = function() {
 		"se" : "row4",
 		"ch" : "row4",
 		"th" : "row4",
-		"us" : "row5"
+		"us" : "row5",
+		"is" : "row5",
+		"uk" : "row5"
 	};
 
 	var active_country = null;
@@ -282,6 +284,16 @@ var main = function() {
 		var visited_places = "California, Oregon, Washington, Arizona, Nevada, Utah, Idaho, Wyoming, Montana, New York,"
 					+ "New Jersey, Pennsylvania, Massachusetts, Florida";
 		active_country = prepare_album(row_num, active_country, "us", "United States", visited_places);
+	});
+
+	$('#is').click(function() {
+		var visited_places = "Reykjavik, Blue Lagoon, Skogafoss, Seljalandfoss, Grabrok, Gulfoss, Geysir, Bingvellir";
+		active_country = prepare_album(row_num, active_country, "", "", visited_places);
+	});
+
+	$('#uk').click(function() {
+		var visited_places = "";
+		active_country = prepare_album(row_num, active_country, "", "", visited_places);
 	});
 
 	// $('#').click(function() {
